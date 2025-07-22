@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import NewsItem from "./NewsItem";
+import newsImage from "../assets/news.jpg";
 
 const NewsBoard = ({ category }) => {
 	const [articles, setArticles] = useState([]);
@@ -13,20 +14,20 @@ const NewsBoard = ({ category }) => {
 				{
 					title: "Sample News Title 1",
 					description: "This is a sample news article shown for demo purposes.",
-					urlToImage: "../assets/news.jpg",
+					urlToImage: newsImage,
 					url: "#",
 				},
 				{
 					title: "Sample News Title 2",
 					description:
 						"Another placeholder article while API is not available.",
-					urlToImage: "../assets/news.jpg",
+					urlToImage: newsImage,
 					url: "#",
 				},
 				{
 					title: "Sample News Title 3",
 					description: "You can update the API or add more dummy data here.",
-					urlToImage: "../assets/news.jpg",
+					urlToImage: newsImage,
 					url: "#",
 				},
 			]);
