@@ -13,20 +13,20 @@ const NewsBoard = ({ category }) => {
 				{
 					title: "Sample News Title 1",
 					description: "This is a sample news article shown for demo purposes.",
-					urlToImage: "https://via.placeholder.com/300",
+					urlToImage: "https://picsum.photos",
 					url: "#",
 				},
 				{
 					title: "Sample News Title 2",
 					description:
 						"Another placeholder article while API is not available.",
-					urlToImage: "https://via.placeholder.com/300",
+					urlToImage: "https://picsum.photos",
 					url: "#",
 				},
 				{
 					title: "Sample News Title 3",
 					description: "You can update the API or add more dummy data here.",
-					urlToImage: "https://via.placeholder.com/300",
+					urlToImage: "https://picsum.photos",
 					url: "#",
 				},
 			]);
