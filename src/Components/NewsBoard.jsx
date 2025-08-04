@@ -9,7 +9,7 @@ const NewsBoard = ({ category }) => {
 		const isProduction = import.meta.env.MODE === "production";
 
 		if (isProduction) {
-			// Show sample news in production (GitHub Pages fallback)
+			
 			setArticles([
 				{
 					title: "Sample News Title 1",
@@ -32,10 +32,10 @@ const NewsBoard = ({ category }) => {
 				},
 			]);
 		} else {
-			// Fetch live news in development
+			
 			let url = `https://newsapi.org/v2/top-headlines?country=us${
 				category ? `&category=${category}` : ""
-			}&apiKey=ca1a3c1086e84678b2d24a3465bc2cd1`;
+			}&apiKey=${import.meta.env.VITE_API_KEY}`;
 
 			fetch(url)
 				.then((res) => res.json())
